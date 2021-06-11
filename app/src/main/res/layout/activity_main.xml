@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text_view_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:padding="8dp"
+        android:layout_gravity="center"
+        android:text="Hello World!"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bottomsheet_behaviour_bg"
+        android:orientation="vertical"
+        app:behavior_peekHeight="64dp"
+        android:padding="8dp"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+        <View
+            android:layout_width="80dp"
+            android:background="@drawable/view_bg"
+            android:layout_gravity="center"
+            android:layout_height="4dp"/>
+
+        <TextView
+            android:background="?actionBarItemBackground"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:drawableLeft="@drawable/ic_account"
+            android:drawablePadding="8dp"
+            android:text="Bank Account"
+            android:textColor="#fff"
+            android:padding="8dp"
+            android:textAlignment="center"
+            android:gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:drawableLeft="@drawable/ic_wallet"
+            android:drawablePadding="8dp"
+            android:text="Your Wallet"
+            android:textColor="#fff"
+            android:padding="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:drawableLeft="@drawable/ic_atm"
+            android:drawablePadding="8dp"
+            android:text="ATM Machine"
+            android:textColor="#fff"
+            android:padding="8dp"
+             />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:drawableLeft="@drawable/ic_stats"
+            android:drawablePadding="8dp"
+            android:padding="8dp"
+            android:text="Account Stats"
+            android:textColor="#fff"
+             />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:drawableLeft="@drawable/ic_bdeck"
+            android:drawablePadding="8dp"
+            android:padding="8dp"
+            android:text="Chill on beach"
+            android:textColor="#fff"
+             />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:drawableLeft="@drawable/ic_dns"
+            android:drawablePadding="8dp"
+            android:text="DNS Server"
+            android:padding="8dp"
+            android:textColor="#fff"
+             />
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
